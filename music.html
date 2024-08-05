@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FFM4G36F"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-G4FFM4G36F');
+     </script>
+      <meta charset="utf-8">
+      <meta name = "viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0">
+      <meta name="author" content="oscarlund">
+      <title>Designer - Oscar Lund</title>
+      <!--Bootstrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/stylesheet.css" rel="stylesheet">
+      <link href="css/layout.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link rel="icon" type="image/png" href="/imgs/fav4-96.png" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/wow.min.js"></script>
+    	<script src="js/jquery.mixitup.min.js"></script>
+      <script src="js/typed.js"></script>
+
+      <!--Scroll-->
+      <script type="text/javascript">
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+            }
+          }
+        });
+      });
+      </script>
+
+      <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "300px";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0px";
+        }
+    </script>
+
+        <script>
+        $(document).ready( function(){
+          $('#target').click( function() {
+              var toggleWidth = $("#myNav").width() == 300 ? "40px" : "300px";
+              $('#myNav').animate({ width: toggleWidth }, 200, 'swing');
+          });
+        });
+      </script>
+
+      <script>
+      new WOW().init();
+      </script>
+
+      <script>
+      $(function() {
+          $('.nav a').on('click', function(){
+              if($('.navbar-toggle').css('display') !='none'){
+                  $(".navbar-toggle").trigger( "click" );
+              }
+          });
+      });
+    </script>
+
+<!--HIDE NAV ON LI CLICK-->
+    <script>
+    $('#navbar').navbar().on('shown', function(){
+        $('body').css('overflow', 'hidden');
+    }).on('hidden', function(){
+        $('body').css('overflow', 'auto');
+    })
+    </script>
+
+<!--NO SCROLL NAVBAR-->
+    <script>
+    $( document ).ready(function() {
+        $('.navbar-toggle collapsed').click(function() {
+           $('body').addClass('overflowhidden')
+        });
+    });
+    </script>
+
+    <script>
+    $(document).foundation('topbar', {scrolltop: false});
+    </script>
+
+    <script>
+      $(window)
+        .on("show.bs.modal", function () {
+          var top = $("body").scrollTop(); $("body").css('position','fixed').css('overflow','hidden').css('top',-top).css('width','100%').css('height',top+5000);
+        })
+        .on("hide.bs.modal", function () {
+          var top = $("body").position().top; $("body").css('position','relative').css('overflow','hidden').css('height','auto').css('top',0).scrollTop(-top);
+        });
+    </script>
+  </head>
+
+  <body id="zero" style="position: relative;">
+    <nav id="one" class="navbar fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button style="margin-top:1px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span style="opacity:0;" class="icon-bar middle-bar"></span>
+                    <span class="icon-bar top-bar"></span>
+                    <span style="opacity:0;" class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="navbar-logo" href="index.html" style="font-family: 'Merriweather', serif; font-size:12px; letter-spacing:0px;"><img src="imgs/oscar_logo.svg"/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Tech</a>
+                    </li>
+                    <li class="active">
+                        <a href="music.html">Music</a>
+                    </li>
+                    <li>
+                        <a href="https://edq3y7kgsxd.typeform.com/to/olbCn5tR" target="blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <div style="text-align:left;">
+      <div class="hero music">
+          <div style="display:flex; flex-direction:column; max-width:1100px;">
+            <h1>Music, keeps my world sane.</h1>
+            <a class="link-text" href="https://open.spotify.com/artist/3cmbJKDfqY4peH3dA5mbZR?si=fjtgKMOFTCuT28B2WI6mlA" target="blank">
+            I live to make melodies
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+                </svg>
+            </a>
+          </div>
+          <iframe class="spotify-hero" style="border-radius:12px" src="https://open.spotify.com/embed/track/3eKDoEiso3MPbY81RDQYSp?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <div class="music-display">
+        <h3 style="margin-bottom:32px; color:#fff;">News</h3>
+        <div class="songs-container">
+            <div class="song-display">
+                <a target="-blank" href="https://open.spotify.com/track/3eKDoEiso3MPbY81RDQYSp?si=9e82074557ae4591">
+                    <img src="imgs/sochk.jpg"/>
+                </a>
+                <p class="heading">Stjärnorna & Kyssarna</p>
+                <p>Kommande</p>
+            </div>
+    
+            <div class="song-display">
+                <a target="-blank" href="https://open.spotify.com/track/3eKDoEiso3MPbY81RDQYSp?si=9e82074557ae4591">
+                  <div class="image">
+                    <img src="imgs/saltholmen.jpg"/>
+                  </div>
+                </a>
+                <p class="heading">Saltholmen</p>
+                <p>Saltholmen är euforin av vänner, sommar och något glas vin för mycket. För mig har Augusti-klipporna och soluppgången blivit ett fotografi av lycka. En påminnelse om att allt som betyder nåt, finns närmare än man tror. </p>
+            </div>
+    
+            <div class="song-display">
+                <a target="-blank" href="https://open.spotify.com/track/3eKDoEiso3MPbY81RDQYSp?si=9e82074557ae4591">
+                  <div class="image">
+                    <img src="imgs/langedrag.jpg"/>
+                  </div>
+                </a>
+                <p class="heading">Långedrag</p>
+                <p>Melodi-hooken kom till mig på en liten restaurang utanför Barcelona. Jag kände
+                    att den hade något så jag smet in på toaletten och spelade in ett voice memo. 
+                    Sen dess har det varit en produktionresa för att lära mig att ge
+                    låten rätt kostym och vibe. Det är en homage till Barcelona, Göteborg
+                    och sena sommarkvällar.</p>
+            </div>
+        </div>
+      </div>
+
+      <div style="background-image:url(imgs/interview_langedrag.png); " class="case-container interview">
+        <h3 style="opacity:0.5;">Intervju</h3>
+        <div class="case-cta">
+          <p>Oscar Lund debuterar med den euforiska singeln Långedrag och berättar om smultronställen.</p>
+          <a class="link-text" target="blank" href="https://popmuzik.se/173129/oscar-lund-langedrag-intervju/">
+            Läs på Popmuzik.se
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="music-collab-container">
+        <h1>Let’s collab!</h1>
+        <a class="link-text" href="https://edq3y7kgsxd.typeform.com/to/olbCn5tR" target="blank">
+        Reach out and say hi
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+            </svg>
+        </a>
+        <div class="music-skills">
+            <p>Production</p>
+            <p>Mixing</p>
+            <p>Song writing</p>
+        </div>
+        <iframe class="iframe-artist center" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3cmbJKDfqY4peH3dA5mbZR?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <div style="margin-top:32px;" class="collaborators-container ">
+        <h3 style="margin-bottom:32px;">Press</h3>
+        <div class="collaborators press">
+          <div class="collaborator">
+            <a target="-blank" href="https://popmuzik.se/173129/oscar-lund-langedrag-intervju/">
+                <img src="imgs/langedrag-popmuzik.jpg"/>
+            </a>
+            <p class="heading">Interview: Popmuzik (26/7 2024)</p>
+            <p>Oscar Lund debuterar med den euforiska singeln Långedrag och berättar om smultronställen i Göteborg...</p>
+          </div>
+          <div class="collaborator">
+            <a target="-blank" href="https://www.nordicmusiccentral.com/oscar-lund-sweden-langedrag-long-haul-single-forthcoming-album-track/">
+                <img src="imgs/langedrag-nordic-music.jpg"/>
+            </a>
+            <p class="heading">Interview: Nordic Music Central (26/7 2024)</p>
+            <p>He’s written “A love letter to music, summer and Gothenburg” to which he subsequently slipped in homage to Barcelona too...</p>
+          </div>
+          <div class="collaborator">
+            <a target="-blank" href="https://augustipr.se/oscar-lund">
+                <img src="imgs/langedrag-augustipr.jpg"/>
+            </a>
+            <p class="heading">Augisti PR (26/7 2024)</p>
+            <p>Efter flera års arbete så gör han äntligen entré med sin träffsäkra och melodiösa pop, och med debutsingeln Långedrag spås han kunna bli en ny stjärna på den svenska popscenen...</p>
+          </div>
+          <div class="collaborator">
+            <a target="-blank" href="">
+                <img src="imgs/empty_press.jpg"/>
+            </a>
+            <p class="heading">TBA</p>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+</body>
+</html>

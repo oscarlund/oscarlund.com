@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FFM4G36F"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G4FFM4G36F');
+      </script>
+      <meta charset="utf-8">
+      <meta name = "viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0">
+      <meta name="author" content="oscarlund">
+      <title>Designer - Oscar Lund</title>
+      <!--Bootstrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/stylesheet.css" rel="stylesheet">
+      <link href="css/layout.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link rel="icon" type="image/png" href="/imgs/fav4-96.png" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/wow.min.js"></script>
+    	<script src="js/jquery.mixitup.min.js"></script>
+      <script src="js/typed.js"></script>
+
+      <script type="text/javascript">
+      $(function(){
+      $(".typeeffect").typed({
+        strings: ["Hello, my name is Oscar Lund, <br /> I am "],
+        startDelay: 3000,
+        typeSpeed: 100,
+        backDelay: 750,
+        backSpeed:30,
+        callback: function(){
+          shift();
+              }
+            });
+        });
+
+        function shift(){
+            $('.typed-cursor').hide();
+            $(".typeeffect2").typed({
+              strings: ["a UX / UI Designer.", "a Musician / Producer.", "a Ski Junkie.", "an M.Sc. Engineer", "a Business Owner."],
+              typeSpeed: 100,
+              backDelay: 1000,
+              backSpeed:30,
+              loop: true,
+            });
+        }
+      </script>
+
+      <script type="text/javascript">
+      $(function () {
+    		var filterList = {
+    			init: function () {
+    				// MixItUp plugin
+    				// http://mixitup.io
+    				$('#portfoliolist').mixItUp({
+      				selectors: {
+        			  target: '.portfolio',
+        			  filter: '.filter'
+        		  },
+        		  load: {
+          		  filter: '.app, .graphic, .logo, .product, .video, .web'
+          		}
+    				});
+    			}
+    		};
+    		// Run the show!
+    		filterList.init();
+    	});
+    	</script>
+
+      <!--Scroll-->
+      <script type="text/javascript">
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+            }
+          }
+        });
+      });
+      </script>
+
+      <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "300px";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0px";
+        }
+    </script>
+
+        <script>
+        $(document).ready( function(){
+          $('#target').click( function() {
+              var toggleWidth = $("#myNav").width() == 300 ? "40px" : "300px";
+              $('#myNav').animate({ width: toggleWidth }, 200, 'swing');
+          });
+        });
+      </script>
+
+      <script>
+      new WOW().init();
+      </script>
+
+      <script>
+      $(function() {
+          $('.nav a').on('click', function(){
+              if($('.navbar-toggle').css('display') !='none'){
+                  $(".navbar-toggle").trigger( "click" );
+              }
+          });
+      });
+    </script>
+
+<!--HIDE NAV ON LI CLICK-->
+    <script>
+    $('#navbar').navbar().on('shown', function(){
+        $('body').css('overflow', 'hidden');
+    }).on('hidden', function(){
+        $('body').css('overflow', 'auto');
+    })
+    </script>
+
+<!--NO SCROLL NAVBAR-->
+    <script>
+    $( document ).ready(function() {
+        $('.navbar-toggle collapsed').click(function() {
+           $('body').addClass('overflowhidden')
+        });
+    });
+    </script>
+
+    <script>
+    $(document).foundation('topbar', {scrolltop: false});
+    </script>
+
+    <script>
+      $(window)
+        .on("show.bs.modal", function () {
+          var top = $("body").scrollTop(); $("body").css('position','fixed').css('overflow','hidden').css('top',-top).css('width','100%').css('height',top+5000);
+        })
+        .on("hide.bs.modal", function () {
+          var top = $("body").position().top; $("body").css('position','relative').css('overflow','hidden').css('height','auto').css('top',0).scrollTop(-top);
+        });
+    </script>
+  </head>
+
+  <body id="zero" style="position: relative;">
+    <nav id="one" class="navbar fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button style="margin-top:1px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span style="opacity:0;" class="icon-bar middle-bar"></span>
+                  <span class="icon-bar top-bar"></span>
+                  <span style="opacity:0;" class="icon-bar middle-bar"></span>
+                  <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-logo" href="index.html"><img src="imgs/oscar_logo.svg"/></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                      <a href="index.html">Tech</a>
+                  </li>
+                  <li>
+                      <a href="music.html">Music</a>
+                  </li>
+                  <li>
+                      <a href="https://edq3y7kgsxd.typeform.com/to/olbCn5tR" target="blank">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <div style="text-align:left;">
+      <div class="hero home">
+          <div style="display:flex; flex-direction:column; max-width:1100px;">
+            <h1>Founding member of <a href="https://www.sendify.se/sv/">Sendify</a>.</h1>
+            <h1>Expert in <i>data</i>, <i>product</i> and <i>startups</i>.</h1>
+            <a class="link-text" href="https://edq3y7kgsxd.typeform.com/to/olbCn5tR" target="blank">
+              Open for shorter projects
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+                </svg>
+            </a>
+            <div data-tf-live="01J4D283J53C932WQEW4N7QB6X"></div><script src="//embed.typeform.com/next/embed.js"></script>
+          </div>
+          <div class="skills">
+            <h3>Advisor (Data & Product)</h3>
+            <h3>Data Analytics</h3>
+            <h3>Product Management</h3>
+            <h3>Product Design</h3>
+          </div>
+      </div>
+      <div 
+        style="
+          background-image:url(imgs/insurance_case.png); 
+          background-size: 50%;
+          background-repeat: no-repeat;
+          background-position-x: 100%;
+          background-position-y: 100%;" 
+        class="case-container growth">
+        <h3 style="opacity:0.5;">Growth Story</h3>
+        <div class="case-cta">
+          <p>How to generate $35K in MRR with two simple components?</p>
+          <a class="link-text" target="blank" href="https://www.figma.com/proto/A0uSGr9SPGXLndimYRKj03/oscarlund.com?node-id=39-4418&t=5xzYDMhr1aGUXKIS-1&scaling=scale-down-width&content-scaling=fixed&page-id=39%3A4417&hide-ui=1">
+            Read case study
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+              </svg>
+          </a>
+        </div>
+      </div>
+      <div class="collaborators-container ">
+        <h3 style="margin-bottom:32px;">Collaborators</h3>
+        <div class="collaborators">
+          <div class="collaborator">
+            <a target="-blank" href="https://www.sendify.se/sv/">
+              <div class="image">
+                <img src="imgs/sendify.svg"/>
+              </div>
+            </a>
+            <p class="heading">Sendify</p>
+            <p>Sweden’s leading logistics platform for small and medium sized business. Operating in multiple markets.</p>
+          </div>
+          <div class="collaborator">
+            <a target="-blank" href="https://www.edslogistics.se/">
+              <div class="image eds">
+                <img src="imgs/eds.svg"/>
+              </div>
+            </a>
+            <p class="heading">Express Delivery Sweden</p>
+            <p>High quality logistics partner with the customer in focus. Providing smooth, quick and safe deliveries.</p>
+          </div>
+          <div class="collaborator">
+            <a target="-blank" href="https://aceup.com/">
+              <div class="image aceup">
+                <img src="imgs/aceup.svg"/>
+              </div>
+            </a>
+            <p class="heading">Aceup</p>
+            <p>Leader in enterprise leadership development based in Boston. Founded in 2015 by business, HR, coaching and technology professionals.</p>
+          </div>
+          <div class="collaborator">
+            <a target="-blank" href="https://www.teoriappar.se/">
+              <div class="image teori">
+                <img src="imgs/teoriappar.svg"/>
+              </div>
+            </a>
+            <p class="heading">Teoriappar</p>
+            <p>Best in class product company creating apps for theory intensive areas. #1 in Education apps with 4.8 / 5 from 26K users.</p>
+          </div>
+        </div>
+      </div>
+      <div style="
+          padding:120px 32px 180px; 
+        ">
+          <div style="display:flex; flex-direction: column;">
+            <h1>I am open for shorter collabs.</h1>
+            <a class="link-text" href="https://edq3y7kgsxd.typeform.com/to/olbCn5tR" target="blank">
+              Let’s do it
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+                </svg>
+            </a>
+          </div>
+          <div class="skills">
+            <h3>Advisor (Data & Product)</h3>
+            <h3>Data Analytics</h3>
+            <h3>Product Management</h3>
+            <h3>Product Design</h3>
+          </div>
+      </div>
+      <div 
+        style="
+          background-image:url(imgs/growth_case_2.png); 
+          background-size: 30%;
+          background-repeat: no-repeat;
+          background-position-x: 100%;
+          background-position-y: 100%;" 
+        class="case-container product">
+        <h3 style="opacity:0.5;">Growth Story</h3>
+        <div class="case-cta">
+          <p>Building a Central Data Team to Boost Product Growth</p>
+          <a class="link-text">
+            Upcoming case study...
+              <!--svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L21.18 10.82L32.34 22H8V26H32.34L21.18 37.18L24 40L40 24L24 8Z" fill="#3DC000"/>
+              </svg-->
+          </a>
+        </div>
+      </div>
+      
+      <div style="margin-top:32px;" class="collaborators-container ">
+        <h3 style="margin-bottom:32px;">Formal education</h3>
+        <div class="collaborators education">
+          <div class="collaborator">
+            <a target="blank" href="https://www.sendify.se/sv/">
+              <div class="image">
+                <img src="imgs/global_leadership.png"/>
+              </div>
+            </a>
+            <p class="heading">ICF Certified Leader</p>
+            <p>A 10 day course mixing theory with practise set in group activities with colleagues and members from other companies.</p>
+          </div>
+          <div class="collaborator">
+            <a target="blank" href="https://www.edslogistics.se/">
+              <div class="image">
+                <img src="imgs/harvard.png"/>
+              </div>
+            </a>
+            <p class="heading">Corporate Governance (Graduate)</p>
+            <p>MGMT S-5018. Management graduate course in the foundations in how boards work. Risk management (Cyber etc.), shareholders, Audit, Accountability.</p>
+          </div>
+          <div class="collaborator">
+            <a target="blank" href="https://aceup.com/">
+              <div class="image">
+                <img src="imgs/chalmers.png"/>
+              </div>
+            </a>
+            <p class="heading">M.Sc. Industrial Engineering</p>
+            <p>The subjects of engineering economics, entrepreneurship and industrial management and innovation systems.</p>
+          </div>
+          <div class="collaborator">
+            <a target="blank" href="https://www.teoriappar.se/">
+              <div class="image">
+                <img src="imgs/upc.png"/>
+              </div>
+            </a>
+            <p class="heading">Exchange Semester (M.Sc.)</p>
+            <p>Financial management, human resources and language.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-grey" style="
+        padding-top:50px; 
+        width:100%; 
+        ">
+        <div style="
+          display:flex;
+          flex-direction:column;
+          padding:0px 0 0px 32px; 
+          text-align:left;
+          ">
+            <a href="mailto:hello@oscarlund.com"><h3><b>hello@oscarlund.com</b></h3></a>
+            <h4 class="text-in-" style="font-size:14px; color:#f0f1f2;"><a href="tel:0046730308259">+46 730 30 82 59</a><br>Gothenburg  /  Sweden</h4>
+        </div>
+        <!--div style="display:table-box; width:40%; float:left; margin:0px 0 0px 0px; text-align:left;">
+            <div class="p-container-701" style="color:#f0f1f2;">
+                <h3><b>MY RESUMÉ</b></h3>
+                <h4 class="text-in-1" style="font-size:14px; color:#f0f1f2;">Get a PDF version of my CV.<br>View or download below.</h4>
+            </div>
+        </div-->
+        <!--div style="padding-bottom:0px;">
+            <div class="button-container" style="margin-top:30px;">
+            <button onclick="window.open('/assets/documents/CV_OscarLund.pdf');" type="submit" formtarget="_blank" rel="noopener noreferrer" class="button_oscar3" style="font-size:16px; font-weight:400; opacity:1;">VIEW PDF CV</button>
+            </div>
+        </div-->
+      </div>
+      <div class="container-grey" style="color:#aaa; padding-top:35px; text-align:center; padding-bottom:5px;">
+        <p style="font-size:14px; font-family: 'PPNeueMontreal-Medium', sans-serif;">© 2024 Oscar Lund</p>
+      </div>
+    </div>
+
+</body>
+
+</html>
