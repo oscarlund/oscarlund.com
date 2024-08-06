@@ -326,7 +326,7 @@ html, body {
 	width: 100%;
     column-gap: 24px;
     /*grid-auto-flow: column;*/
-	grid-template-columns: auto auto auto;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	align-items: flex-start;
 	justify-content: space-between;
 }
@@ -631,6 +631,7 @@ bottom:-10px;
 	background-size:70%;
 	background-position-x: 140%;
 }
+
 .collaborators {
     column-gap: 24px;
 	row-gap:24px;
@@ -640,7 +641,7 @@ bottom:-10px;
 .songs-container {
     column-gap: 24px;
 	row-gap:24px;
-	grid-template-columns: auto auto ;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .skills {
@@ -653,6 +654,15 @@ bottom:-10px;
 .skills h3 {
 	font-size:20px;
     letter-spacing: 1px;
+}
+
+.music-skills {
+	column-gap: 56px;
+    margin-top: 16px;
+}
+
+.music-skills p {
+	font-size: 20px;
 }
 
 .collaborator img {
@@ -716,6 +726,37 @@ bottom:-15px;
 	padding: 100px 24px 300px;
 }
 
+.hero.music {
+    background-size: clamp(300px, 100%, 400px);
+	padding: 80px 16px 450px;
+}
+
+.spotify-hero {
+    left: 12px;
+    width: clamp(100px, 100%, 800px);
+    margin-bottom: -165px;
+}
+
+.music-display {
+    background: #282828;
+    width: 100%;
+    padding: 48px 16px 88px;
+    color: #121212;
+}
+
+.link-text {
+    font-size: 28px;
+}
+
+.link-text svg {
+    width: 28px;
+    height: 28px;
+}
+
+.collaborators-container {
+    padding: 96px 16px 64px;
+}
+
 .collaborator img {
 	width: 110px;
 }
@@ -724,8 +765,58 @@ bottom:-15px;
 	width: 160px;
 }
 
+.collaborator p, .song-display p {
+    font-size: 16px;
+    letter-spacing: 0.6px;
+}
+
+.skills h3 {
+	font-size:18px;
+    letter-spacing: 0.9px;
+}
+
+.music-skills {
+	column-gap: 40px;
+    margin-top: 16px;
+}
+
+.music-skills p {
+	font-size: 18px;
+	letter-spacing:0.9px;
+}
+
+.songs-container {
+	column-gap: 16px;
+	row-gap: 16px;
+}
+
+.song-display .heading {
+    margin-top: 12px;
+    /* width: 100%; */
+}
+
+.case-container {
+    min-height: 450px;
+    padding: 64px 16px 64px;
+}
+
+.case-container h3 {
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+.case-cta p {
+    font-size:28px;
+    padding-top: 24px;
+}
+
+.music-collab-container {
+    padding: 80px 16px 0px;
+}
+
 .container {
 	width: 100%;
+	padding: 0 16px !important;
 }
 
 .portfolio .label {
@@ -737,6 +828,26 @@ bottom:-15px;
 	display:none;
 }
 
+}
+
+@media screen and (max-width: 380px) {
+	.link-text {
+		font-size: 24px;
+	}
+
+	.music-skills {
+		column-gap: 32px;
+	}
+	
+	.music-skills p {
+		font-size: 16px;
+		letter-spacing:0.8px;
+	}
+	
+	.skills h3 {
+		font-size:16px;
+		letter-spacing:0.8px;
+	}
 }
 
 /* #Clearing */
