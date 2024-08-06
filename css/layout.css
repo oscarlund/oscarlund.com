@@ -118,7 +118,7 @@ html, body {
 .iframe-artist.center {
 	margin-top:32px;
     left: 20px;
-    width: clamp(400px, 100%, 800px);
+    width: clamp(0px, 100%, 800px);
 }
 
 .link-text{
