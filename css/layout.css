@@ -346,6 +346,10 @@ html, body {
 	transform:scale(1.07);
 }
 
+.open-for-collabs {
+	padding:120px 32px 180px;
+}
+
 .music-collab-container {
 	width:100%;
 	padding:148px 20px 0px;
@@ -354,6 +358,10 @@ html, body {
 	text-align:center;
 	flex-direction: column;
 	align-items: center;
+}
+
+.open-for-collabs {
+	padding:120px 20px 180px;
 }
 
 .music-skills {
@@ -723,7 +731,7 @@ bottom:-15px;
 	background-size:75%;
 	background-position-x: 150%;
 	background-position-y: 100%;
-	padding: 100px 24px 300px;
+	padding: 100px 16px 300px;
 }
 
 .hero.music {
@@ -812,6 +820,10 @@ bottom:-15px;
 
 .music-collab-container {
     padding: 80px 16px 0px;
+}
+
+.open-for-collabs {
+	padding:80px 16px 180px;
 }
 
 .container {
